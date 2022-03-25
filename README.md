@@ -25,3 +25,4 @@ Pylearn2 for python3.8
 - change -> `ver_line = decode(p_out[0]).strip().split('\n')[-2]` this is for cuda version error
 - file `theano\sandbox\cuda\cuda_ndarray.cu` for mod.cu error
 - change -> `const char * clipmode = PyString_AsString(clipmode_obj)` `const char * cstr = PyString_AsString(str)`
+- file `pylearn2\packaged_dependenciestheano_linear\unshared_conv\localdot.py` remove `import gpu_unshared_conv 
