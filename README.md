@@ -1,3 +1,16 @@
 # pylearn2_python3
 
 Pylearn2 for python3.8
+
+#Do changes
+
+- command to run in windows `set THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 && python pylearn2\scripts\train.py pylearn\scripts\cifar10_convolutional.yaml`
+
+#Lib site-packages changes
+
+#Theano package changes
+
+- file `theano\sandbox\cuda\nvcc_compiler.py`
+- change -> `ver_line = decode(p_out[0]).strip().split('\n')[-2]` this is for cuda version error
+- file `theano\sandbox\cuda\cuda_ndarray.cu`
+- change -> `const char * clipmode = PyString_AsString(clipmode_obj)` `const char * cstr = PyString_AsString(str)`
