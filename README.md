@@ -2,6 +2,13 @@
 
 Pylearn2 for python3.8
 
+#Software required
+
+- Cuda toolkit
+- Visual studio
+- Anaconda
+- Cuda-supported GPU
+
 #Do changes
 
 - command to run in windows `set THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 && python pylearn2\scripts\train.py pylearn\scripts\cifar10_convolutional.yaml`
